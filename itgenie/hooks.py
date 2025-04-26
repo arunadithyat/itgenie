@@ -62,6 +62,12 @@ fixtures = [
         "filters": {
             "module": ["in", ["Itgenie"]]
         }
+    },
+    {
+        "dt": "Property Setter",
+        "filters": {
+            "module": ["in", ["Itgenie"]]
+        }
     }
 ]
 
