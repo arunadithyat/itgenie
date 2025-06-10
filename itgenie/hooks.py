@@ -68,7 +68,13 @@ fixtures = [
         "filters": {
             "module": ["in", ["Itgenie"]]
         }
-    }
+    },
+    {
+      "dt":"DocType",
+      "filters":{
+        "module": ["in", ["Itgenie"]]
+}  
+}
 ]
 
 # application home page (will override Website Settings)
