@@ -2,7 +2,7 @@ app_name = "itgenie"
 app_title = "Itgenie"
 app_publisher = "Arun Adithya T"
 app_description = "IT Customizations"
-app_email = "arun@itgenie.com"
+app_email = "arun@automategenie.ai"
 app_license = "mit"
 
 # Apps
