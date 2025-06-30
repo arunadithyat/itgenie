@@ -57,18 +57,18 @@ app_license = "mit"
 # ----------
 
 fixtures = [
-    {
-        "dt": "Custom Field",
-        "filters": {
-            "module": ["in", ["Itgenie"]]
-        }
-    },
-    {
-        "dt": "Property Setter",
-        "filters": {
-            "module": ["in", ["Itgenie"]]
-        }
-    },
+   # {
+    #    "dt": "Custom Field",
+    #    "filters": {
+     #       "module": ["in", ["Itgenie"]]
+      #  }
+   # },
+    #{
+     #   "dt": "Property Setter",
+      #  "filters": {
+       #     "module": ["in", ["Itgenie"]]
+       # }
+   # },
     {
       "dt":"DocType",
       "filters":{
