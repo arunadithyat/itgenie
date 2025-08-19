@@ -1,0 +1,469 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-30 23:22:36.251743",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_details_section",
+  "product_design",
+  "item_code",
+  "item_name",
+  "application",
+  "product",
+  "product_size",
+  "product_thickness",
+  "color_code",
+  "polish_code_with_finish",
+  "wpc_colour",
+  "flush_grade",
+  "engineer_wood_details",
+  "m_wood_details",
+  "hdhmr_details",
+  "laminate_sheet",
+  "laminate_thickness",
+  "veneer_sheet",
+  "stiles_width",
+  "panel_width",
+  "top_rail_width",
+  "bottom_rail__width",
+  "grill_details",
+  "beading_details",
+  "glass_details",
+  "frame_thickness",
+  "threshold_thickness",
+  "carving_details",
+  "production_measurements",
+  "column_break_jghs",
+  "quantity",
+  "category",
+  "shutter_type",
+  "frame_type",
+  "wood_grade",
+  "wood_type",
+  "threshold",
+  "assembled",
+  "polish",
+  "carving",
+  "grill",
+  "glass",
+  "hardware",
+  "hardware_list",
+  "ornaments",
+  "beading",
+  "laminate",
+  "veneer",
+  "anti_termite",
+  "epoxy",
+  "load_bearing",
+  "top",
+  "left__right_sides",
+  "wood_projection",
+  "frame_design",
+  "rebate_thickness",
+  "polish_location",
+  "frame_corner_details",
+  "ornaments_details",
+  "additional_remarks",
+  "responsible_persons_section",
+  "carpenter",
+  "carving_team",
+  "operations_manager",
+  "production_incharge"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "product_design",
+   "fieldtype": "Attach",
+   "label": "Product Design"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "application",
+   "fieldtype": "Data",
+   "label": "Application"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "product_size",
+   "fieldtype": "Data",
+   "label": "Product Size"
+  },
+  {
+   "depends_on": "eval: doc.category",
+   "fieldname": "product_thickness",
+   "fieldtype": "Data",
+   "label": "Product Thickness"
+  },
+  {
+   "fieldname": "color_code",
+   "fieldtype": "Data",
+   "label": "Color Code"
+  },
+  {
+   "depends_on": "eval:doc.polish",
+   "fieldname": "polish_code_with_finish",
+   "fieldtype": "Data",
+   "label": "Polish code with finish"
+  },
+  {
+   "depends_on": "eval: doc.category=='WPC'",
+   "fieldname": "wpc_colour",
+   "fieldtype": "Data",
+   "label": "WPC Colour"
+  },
+  {
+   "depends_on": "eval: doc.category=='Flush'",
+   "fieldname": "flush_grade",
+   "fieldtype": "Data",
+   "label": "Flush Grade"
+  },
+  {
+   "depends_on": "eval: doc.category == 'Engineer Wood'",
+   "fieldname": "engineer_wood_details",
+   "fieldtype": "Data",
+   "label": "Engineer Wood Details"
+  },
+  {
+   "depends_on": "eval:doc.category == 'M Wood'",
+   "fieldname": "m_wood_details",
+   "fieldtype": "Data",
+   "label": "M Wood Details"
+  },
+  {
+   "depends_on": "eval:doc.category=='HDHMR'",
+   "fieldname": "hdhmr_details",
+   "fieldtype": "Data",
+   "label": "HDHMR Details"
+  },
+  {
+   "depends_on": "eval:doc.laminate",
+   "fieldname": "laminate_sheet",
+   "fieldtype": "Data",
+   "label": "Laminate Sheet"
+  },
+  {
+   "depends_on": "eval.doc.laminate",
+   "fieldname": "laminate_thickness",
+   "fieldtype": "Data",
+   "label": "Laminate Thickness"
+  },
+  {
+   "depends_on": "eval.doc.veneer",
+   "fieldname": "veneer_sheet",
+   "fieldtype": "Data",
+   "label": "Veneer Sheet"
+  },
+  {
+   "depends_on": "eval:doc.product=='Shutter'",
+   "fieldname": "stiles_width",
+   "fieldtype": "Data",
+   "label": "Stiles Width"
+  },
+  {
+   "depends_on": "eval:doc.product=='Shutter'",
+   "fieldname": "panel_width",
+   "fieldtype": "Data",
+   "label": "Panel Width"
+  },
+  {
+   "depends_on": "eval:doc.product=='Shutter'",
+   "fieldname": "top_rail_width",
+   "fieldtype": "Data",
+   "label": "Top Rail Width"
+  },
+  {
+   "depends_on": "eval:doc.product=='Shutter'",
+   "fieldname": "bottom_rail__width",
+   "fieldtype": "Data",
+   "label": "Bottom Rail  Width"
+  },
+  {
+   "depends_on": "eval:doc.grill",
+   "fieldname": "grill_details",
+   "fieldtype": "Data",
+   "label": "Grill Details"
+  },
+  {
+   "depends_on": "eval:doc.beading",
+   "fieldname": "beading_details",
+   "fieldtype": "Data",
+   "label": "Beading Details"
+  },
+  {
+   "depends_on": "eval:doc.glass",
+   "fieldname": "glass_details",
+   "fieldtype": "Data",
+   "label": "Glass Details"
+  },
+  {
+   "depends_on": "eval: doc.product == 'Frame'",
+   "fieldname": "frame_thickness",
+   "fieldtype": "Data",
+   "label": "Frame Thickness"
+  },
+  {
+   "depends_on": "eval: doc.product == \"Frame\" && doc.threshold == 1",
+   "fieldname": "threshold_thickness",
+   "fieldtype": "Data",
+   "label": "Threshold Thickness"
+  },
+  {
+   "depends_on": "eval:doc.carving",
+   "fieldname": "carving_details",
+   "fieldtype": "Data",
+   "label": "Carving Details"
+  },
+  {
+   "depends_on": "eval:doc.product",
+   "fieldname": "production_measurements",
+   "fieldtype": "Small Text",
+   "label": "Production Measurements"
+  },
+  {
+   "fieldname": "column_break_jghs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "depends_on": "eval: doc.product",
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "depends_on": "eval: doc.product == \"Shutter\"",
+   "fieldname": "shutter_type",
+   "fieldtype": "Data",
+   "label": "Shutter Type"
+  },
+  {
+   "depends_on": "eval: doc.product == 'Frame'",
+   "fieldname": "frame_type",
+   "fieldtype": "Data",
+   "label": "Frame type"
+  },
+  {
+   "depends_on": "eval: doc.category=='Wood'",
+   "fieldname": "wood_grade",
+   "fieldtype": "Data",
+   "label": "Wood Grade"
+  },
+  {
+   "depends_on": "eval: doc.category=='Wood'",
+   "fieldname": "wood_type",
+   "fieldtype": "Data",
+   "label": "Wood Type"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.product == \"Frame\" && doc.threshold == 1",
+   "fieldname": "threshold",
+   "fieldtype": "Check",
+   "label": "Threshold"
+  },
+  {
+   "default": "0",
+   "fieldname": "assembled",
+   "fieldtype": "Check",
+   "label": "Assembled"
+  },
+  {
+   "default": "0",
+   "fieldname": "polish",
+   "fieldtype": "Check",
+   "label": "Polish"
+  },
+  {
+   "default": "0",
+   "fieldname": "carving",
+   "fieldtype": "Check",
+   "label": "Carving"
+  },
+  {
+   "default": "0",
+   "fieldname": "grill",
+   "fieldtype": "Check",
+   "label": "Grill"
+  },
+  {
+   "default": "0",
+   "fieldname": "glass",
+   "fieldtype": "Check",
+   "label": "Glass"
+  },
+  {
+   "default": "0",
+   "fieldname": "hardware",
+   "fieldtype": "Check",
+   "label": "Hardware"
+  },
+  {
+   "depends_on": "eval.doc.hardware",
+   "fieldname": "hardware_list",
+   "fieldtype": "Small Text",
+   "label": "Hardware List"
+  },
+  {
+   "default": "0",
+   "fieldname": "ornaments",
+   "fieldtype": "Check",
+   "label": "Ornaments"
+  },
+  {
+   "default": "0",
+   "fieldname": "beading",
+   "fieldtype": "Check",
+   "label": "Beading"
+  },
+  {
+   "default": "0",
+   "fieldname": "laminate",
+   "fieldtype": "Check",
+   "label": "Laminate"
+  },
+  {
+   "default": "0",
+   "fieldname": "veneer",
+   "fieldtype": "Check",
+   "label": "Veneer"
+  },
+  {
+   "default": "0",
+   "fieldname": "anti_termite",
+   "fieldtype": "Check",
+   "label": "Anti Termite"
+  },
+  {
+   "default": "0",
+   "fieldname": "epoxy",
+   "fieldtype": "Check",
+   "label": "Epoxy"
+  },
+  {
+   "default": "0",
+   "fieldname": "load_bearing",
+   "fieldtype": "Check",
+   "label": "Load Bearing"
+  },
+  {
+   "depends_on": "eval:doc.product=='Frame'",
+   "fieldname": "top",
+   "fieldtype": "Data",
+   "label": "Top"
+  },
+  {
+   "depends_on": "eval:doc.product=='Frame'",
+   "fieldname": "left__right_sides",
+   "fieldtype": "Data",
+   "label": "Left / Right Sides"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.product=='Frame'",
+   "fieldname": "wood_projection",
+   "fieldtype": "Check",
+   "label": "Wood Projection"
+  },
+  {
+   "depends_on": "eval:doc.product=='Frame'",
+   "fieldname": "frame_design",
+   "fieldtype": "Select",
+   "label": "Frame Design",
+   "options": "\nSingle Side\nDouble Side"
+  },
+  {
+   "depends_on": "eval: doc.category",
+   "fieldname": "rebate_thickness",
+   "fieldtype": "Data",
+   "label": "Rebate Thickness"
+  },
+  {
+   "depends_on": "eval: doc.category",
+   "fieldname": "polish_location",
+   "fieldtype": "Select",
+   "label": "Polish Location ",
+   "options": "\nPolish at Factory\nPolish at Site"
+  },
+  {
+   "depends_on": "eval: doc.product == 'Frame'",
+   "fieldname": "frame_corner_details",
+   "fieldtype": "Small Text",
+   "label": "Frame Corner Details"
+  },
+  {
+   "depends_on": "eval:doc.ornaments",
+   "fieldname": "ornaments_details",
+   "fieldtype": "Small Text",
+   "label": "Ornaments Details"
+  },
+  {
+   "depends_on": "eval: doc.category",
+   "fieldname": "additional_remarks",
+   "fieldtype": "Small Text",
+   "label": "Additional Remarks"
+  },
+  {
+   "fieldname": "responsible_persons_section",
+   "fieldtype": "Section Break",
+   "label": "Responsible Persons"
+  },
+  {
+   "fieldname": "carpenter",
+   "fieldtype": "Data",
+   "label": "Carpenter"
+  },
+  {
+   "fieldname": "carving_team",
+   "fieldtype": "Data",
+   "label": "Carving Team"
+  },
+  {
+   "fieldname": "operations_manager",
+   "fieldtype": "Data",
+   "label": "Operations Manager"
+  },
+  {
+   "fieldname": "production_incharge",
+   "fieldtype": "Data",
+   "label": "Production Incharge"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-02 13:05:18.086631",
+ "modified_by": "Administrator",
+ "module": "Itgenie",
+ "name": "Production Briefing Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

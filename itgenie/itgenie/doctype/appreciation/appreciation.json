@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-06-30 23:22:36.031205",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wljg",
+  "workflow_state",
+  "naming_series",
+  "employee",
+  "column_break_staw",
+  "employee_name",
+  "department",
+  "designation",
+  "appreciation_details_section",
+  "appreciation_type",
+  "reason_for_appreciation",
+  "column_break_ljxs",
+  "result",
+  "voucher_type",
+  "voucher_number",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wljg",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_staw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Read Only",
+   "label": "Department"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Read Only",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "appreciation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Appreciation Details"
+  },
+  {
+   "fieldname": "appreciation_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appreciation Type",
+   "options": "\nCash\nVouchers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reason_for_appreciation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason For Appreciation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ljxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Result",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Voucher Type",
+   "options": "\nAmazon\nPvr\nBookmy Show",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voucher_number",
+   "fieldtype": "Data",
+   "label": "Voucher Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Appreciation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-02 13:03:41.318343",
+ "modified_by": "Administrator",
+ "module": "Itgenie",
+ "name": "Appreciation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

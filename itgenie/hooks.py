@@ -56,7 +56,7 @@ app_license = "mit"
 # Home Pages
 # ----------
 
-fixtures = [
+#fixtures = [
    # {
     #    "dt": "Custom Field",
     #    "filters": {
@@ -69,13 +69,18 @@ fixtures = [
        #     "module": ["in", ["Itgenie"]]
        # }
    # },
-    {
-      "dt":"DocType",
-      "filters":{
-        "module": ["in", ["Itgenie"]]
-}  
-}
-]
+ #   {
+   #   "dt":"DocType",
+  #    "filters":{
+ #       "module": ["in", ["Itgenie"]]
+#}  
+#}
+#]
+
+#override_whitelisted_methods.update({
+#    "/api/method/itgenie.api.slack_timesheet.slack_command": "itgenie.api.slack_timesheet.slack_command",
+#    "/api/method/itgenie.api.slack_timesheet.slack_interactions": "itgenie.api.slack_timesheet.slack_interactions"
+#})
 
 # application home page (will override Website Settings)
 # home_page = "login"
