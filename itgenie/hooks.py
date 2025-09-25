@@ -56,26 +56,26 @@ app_license = "mit"
 # Home Pages
 # ----------
 
-#fixtures = [
-   # {
-    #    "dt": "Custom Field",
-    #    "filters": {
-     #       "module": ["in", ["Itgenie"]]
-      #  }
-   # },
-    #{
-     #   "dt": "Property Setter",
-      #  "filters": {
-       #     "module": ["in", ["Itgenie"]]
-       # }
-   # },
- #   {
-   #   "dt":"DocType",
-  #    "filters":{
- #       "module": ["in", ["Itgenie"]]
-#}  
-#}
-#]
+fixtures = [
+   {
+       "dt": "Custom Field",
+       "filters": {
+           "module": ["in", ["Itgenie"]]
+       }
+   },
+    {
+       "dt": "Property Setter",
+       "filters": {
+           "module": ["in", ["Itgenie"]]
+       }
+   },
+   {
+     "dt":"DocType",
+     "filters":{
+       "module": ["in", ["Itgenie"]]
+}  
+}
+]
 
 #override_whitelisted_methods.update({
 #    "/api/method/itgenie.api.slack_timesheet.slack_command": "itgenie.api.slack_timesheet.slack_command",
