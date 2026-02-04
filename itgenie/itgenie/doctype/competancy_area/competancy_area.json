@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-12 16:20:46.287816",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "competency_area"
+ ],
+ "fields": [
+  {
+   "fieldname": "competency_area",
+   "fieldtype": "Data",
+   "label": "Competancy Area"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-26 00:36:15.243695",
+ "modified_by": "Administrator",
+ "module": "Itgenie",
+ "name": "Competancy Area",
+ "owner": "rajkumar.itdigital@homegeniegroup.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

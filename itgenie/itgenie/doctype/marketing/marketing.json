@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-08-20 15:59:41.876162",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "marketing_section",
+  "ads_spent",
+  "section_break_shra",
+  "tools"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "series"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Spent Date"
+  },
+  {
+   "fieldname": "marketing_section",
+   "fieldtype": "Section Break",
+   "label": "Marketing"
+  },
+  {
+   "fieldname": "ads_spent",
+   "fieldtype": "Table",
+   "label": "Ads Spent",
+   "options": "Marketing Tools"
+  },
+  {
+   "fieldname": "section_break_shra",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tools",
+   "fieldtype": "Table",
+   "label": "Tools",
+   "options": "Marketing Tools"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-26 00:36:14.588195",
+ "modified_by": "Administrator",
+ "module": "Itgenie",
+ "name": "Marketing",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

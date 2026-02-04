@@ -94,10 +94,11 @@
   }
  ],
  "grid_page_length": 50,
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-03 15:01:43.078973",
- "modified_by": "Administrator",
+ "modified": "2025-11-26 15:34:59.947393",
+ "modified_by": "arun.itdigital@homegeniegroup.com",
  "module": "Itgenie",
  "name": "Production Briefing Form",
  "naming_rule": "By \"Naming Series\" field",
